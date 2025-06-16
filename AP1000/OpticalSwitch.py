@@ -61,12 +61,12 @@ class OpticalSwitch():
                 return "NX2"
             else:
                 return 0
-        elif re.findall("x4", ID.split("/")[2].split("-")[3].lower()) != []:
+        elif re.findall("4", ID.split("/")[2].split("-")[3].lower()) != []:
             if type.lower() == "s":
                 return "1X4"
             else:
                 return 1
-        elif re.findall("x8", ID.split("/")[2].split("-")[3].lower()) != []:
+        elif re.findall("8", ID.split("/")[2].split("-")[3].lower()) != []:
             if type.lower() == "s":
                 return "1X8"
             else:

@@ -410,7 +410,7 @@ class OSA():
             XData = [self.__NPoints]       
             DeltaX = (self.__StopWavelength - self.__StartWavelength) / self.__NPoints
             for i in range(0, self.__NPoints):
-                if Scale.lower() == "lin":
+                if ScaleX.lower() == "lin":
                     YData.append(random())
                 else:
                     YData.append(80.0 * random() - 70.0)

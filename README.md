@@ -15,7 +15,12 @@ Python3 Library for controlling Apex equipments
 1. To access to the help and see all possibilities of PyApex, import the module :<br> 
 `import PyApex`<br>
 `help(PyApex)`<br>
-With PyApex, you can communicate with AP1000 (Ethernet), AP2XXX (Ethernet), AB3510 (USB) and XU Thermal Etuve (RS232).<br><br>
+With PyApex, you can communicate with APEX Technologies products:<br>
+– AP1000 Optical Multitest Platform mainframe (Ethernet)<br>
+– AP2XXX legacy OSA & OCSA analyzers (Ethernet)<br>
+– OSA-APx Series & OCSA-APx Series (Ethernet)<br>
+– OFDR-APx Series & OCSA-APx Series (Ethernet)<br>
+– AB3510 (USB) and XU Thermal Etuve (RS232).<br><br>
 **AP1000**<br><br>
 The AP1000 class allows you to control (via Ethernet) any AP1000 equipment (AP1000-2, AP1000-5 and AP1000-8)<br><br>
 1. In your Python 3.x script, import the PyApex module. For exemple, if you want to remote control an AP1000 equipment, import the AP1000 sub-module of PyApex as below<br>
@@ -70,24 +75,24 @@ MyTLS.Off()
 # The connection with the AP1000 is closed
 MyAP1000.Close()
 ```
-**AP2XXX**<br><br>
-The AP2XXX class allows you to control (via Ethernet) any OSA and OCSA equipment (AP2040, AP2050, AP2060, AP2443,...)<br><br>
-1. In your Python 3.x script, import the PyApex module. For exemple, if you want to remote control an AP2040 equipment, import the AP2XXX sub-module of PyApex as below<br>
-`import PyApex.AP2XXX as AP2040`<br><br>
+**AP2XXX // OSA/OCSA**<br><br>
+The AP2XXX class allows you to control (via Ethernet) any OSA and OCSA equipment (OSA-APx Series, OCSA-APx Series, AP2040, AP2050, AP2060, AP2443,...)<br><br>
+1. In your Python 3.x script, import the PyApex module. For exemple, if you want to remote control an OCSA-AP6-CLO equipment, import the AP2XXX sub-module of PyApex as below<br>
+`import PyApex.AP2XXX as OCSA_AP6_CLO`<br><br>
 2. Connect to the equipment:<br>
-`MyAP2040 = AP2040("192.168.0.10", Simulation=False)`<br>
+`OCSA_CLO = OCSA_AP6_CLO("192.168.0.10", Simulation=False)`<br>
 where `192.168.0.10` is the IP address of the equipment<br>
 and `Simulation` argument is a boolean to simulate the equipment<br><br>
 3. To see the methods and attributs of the AP2XXX class, do:<br>
-`help(MyAP2040)`<br>
+`help(OCSA_CLO)`<br>
 All functions of your AP2XXX are in sub-classes :<br>
-`MyOSA = MyAP2040.OSA()` for the Heterodyne OSA<br>
-`MyPowerMeter = MyAP2040.Powermeter()` for the powermeter, ...<br>
+`MyOCSA = OCSA_CLO.OCSA()` for the Heterodyne OCSA<br>
+`MyPowerMeter = OCSA_CLO.Powermeter()` for the powermeter, ...<br>
 And, to see the methods and attributs of these sub-classes :<br>
-`help(MyOSA)`<br>
+`help(MyOCSA)`<br>
 `help(MyPowerMeter)`<br>
 4. Finally, to close the connection to the equipment, use the Close function:<br>
-`MyAP2040.Close()`<br><br>
+`OCSA_CLO.Close()`<br><br>
 
 Here is a very simple example for controlling your OSA:<br>
 ```python

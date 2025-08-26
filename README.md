@@ -2,17 +2,17 @@
 PyApex
 ======
 
-Python3 Library for controlling Apex equipments
+Python3 Library for controlling APEX Technologies products
 
 ***
 **Installation**<br><br>
-1. You will see a button 'Code' on the right hand corner of the page.
+1. Locate the 'Code' button on the right-hand corner of the page.
 2. Click on it to access the drop down menu.
 3. Click on the Download ZIP option.
-4. Unzip it and move it in the "Lib" directory of your Python 3.x distribution or put it in the same folder with your python project. 
+4. Unzip it and move it in the "Lib" directory of your Python 3.x distribution or put it in the same folder as your python project. 
 ***
 **Using**<br><br>
-1. To access to the help and see all possibilities of PyApex, import the module :<br> 
+1. To access the help and see all possibilities of PyApex, import the module :<br> 
 `import PyApex`<br>
 `help(PyApex)`<br>
 With PyApex, you can communicate with APEX Technologies products:<br>
@@ -20,7 +20,8 @@ With PyApex, you can communicate with APEX Technologies products:<br>
 – AP2XXX legacy OSA & OCSA analyzers (Ethernet)<br>
 – OSA-APx Series & OCSA-APx Series (Ethernet)<br>
 – OFDR-APx Series & OCSA-APx Series (Ethernet)<br>
-– AB3510 (USB) and XU Thermal Etuve (RS232).<br><br>
+– AB3510 (USB) and XU Thermal Etuve (RS232)<br>
+Upcoming: OFDR and TLS<br><br>
 **AP1000**<br><br>
 The AP1000 class allows you to control (via Ethernet) any AP1000 equipment (AP1000-2, AP1000-5 and AP1000-8)<br><br>
 1. In your Python 3.x script, import the PyApex module. For exemple, if you want to remote control an AP1000 equipment, import the AP1000 sub-module of PyApex as below<br>

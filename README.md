@@ -6,7 +6,7 @@ Python3 Library for controlling APEX Technologies products
 
 ***
 **Installation**<br><br>
-1. Locate the 'Code' button on the right-hand corner of the page.
+1. Locate the 'Code' button on the right-hand side of the page.
 2. Click on it to access the drop down menu.
 3. Click on the Download ZIP option.
 4. Unzip it and move it in the "Lib" directory of your Python 3.x distribution or put it in the same folder as your python project. 
